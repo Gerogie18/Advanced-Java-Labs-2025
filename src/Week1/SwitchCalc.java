@@ -10,6 +10,7 @@ public class SwitchCalc {
 
         System.out.println("Input simple math expression with two operators");
         String input = scanner.nextLine().replaceAll("\\s", "");
+        scanner.close();
 
         Pattern pattern = Pattern.compile("(\\d+(?:\\.\\d+)?)([+\\-x*/])(\\d+(?:\\.\\d+)?)");
         Matcher matcher = pattern.matcher(input);
